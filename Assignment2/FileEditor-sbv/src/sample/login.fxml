@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="400.0" maxWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to top,  #44919d,#ea6e6e);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="400.0" maxWidth="600.0" prefHeight="400.0" prefWidth="600.0">
+         <bottom>
+            <HBox alignment="CENTER" maxHeight="70.0" maxWidth="500.0" prefHeight="70.0" prefWidth="500.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="loginButton" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: lightgreen;" text="Login " textFill="#865252">
+                     <font>
+                        <Font name="Bookman Old Style Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancleButton" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ea6e6e;" text="Cancle" textFill="#434242">
+                     <font>
+                        <Font name="Bookman Old Style Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <GridPane maxHeight="150.0" maxWidth="573.0" prefHeight="150.0" prefWidth="573.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="200.0" text="Username: " textAlignment="CENTER" textFill="#541965" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Bookman Old Style Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="200.0" text="Password: " textFill="#541965" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Bookman Old Style Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userNameField" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="passwordField" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font></PasswordField>
+                  <Label fx:id="msg" alignment="CENTER" prefHeight="21.0" prefWidth="105.0" text="Test" textAlignment="CENTER" textFill="#b53b3b" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+                     <font>
+                        <Font name="Bookman Old Style Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="520.0" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <rowConstraints>
+                  <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="5.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.0" minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="20.0" minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </center>
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="50.0" maxWidth="450.0" prefHeight="50.0" prefWidth="450.0" text="Welcome to our System" textFill="#541965" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</FlowPane>

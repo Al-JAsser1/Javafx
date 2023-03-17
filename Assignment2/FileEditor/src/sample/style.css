@@ -1,0 +1,22 @@
+.root{
+    -fx-background-color:lightblue;
+    -fx-font-size: 12pt;
+    -fx-font-family: cursive;
+    -fx-font-style: italic;
+}
+
+.button{
+    -fx-font-style: normal;
+    -fx-border-radius: 20;
+   -fx-background-radius: 10;
+   -fx-background-color: #84C2AC;
+   -fx-text-fill: black;
+}
+
+.vbox{
+    -fx-background-color: #bbe3ed;
+}
+
+#label-error{
+    -fx-text-fill: red;
+}
